@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <h1>Survey Form</h1>
+    <form action="submit-survey" method="POST">
+        
+        <!-- Name -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <!-- Age -->
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" required><br><br>
+
+        <!-- Gender -->
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other" required>
+        <label for="other">Other</label><br><br>
+        
+        <!-- Rating -->
+        <label for="rating">How would you rate our service?</label><br>
+        <select id="rating" name="rating" required>
+            <option value="">Select rating</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Average">Average</option>
+            <option value="Poor">Poor</option>
+        </select><br><br>
+        
+        <!-- Services -->
+        <label>Which of our services did you use? (Check all that apply)</label><br>
+        <input type="checkbox" id="service1" name="services" value="Service 1">
+        <label for="service1">Service 1</label><br>
+        <input type="checkbox" id="service2" name="services" value="Service 2">
+        <label for="service2">Service 2</label><br>
+        <input type="checkbox" id="service3" name="services" value="Service 3">
+        <label for="service3">Service 3</label><br><br>
+        
+        <!-- Comments -->
+        <label for="comments">Any additional comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+        
+    </form>
+
+</body>
+</html>
